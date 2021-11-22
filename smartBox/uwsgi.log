@@ -1,0 +1,500 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 14:55:03 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 14:56:52 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:00:02 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:00:38 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:02:19 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:06:21 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.0.11:9001 fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/.virtualenvs/smartBox
+Set PythonHome to /home/ubuntu/.virtualenvs/smartBox
+Python main interpreter initialized at 0x55d3d73acbe0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d3d73acbe0 pid: 20439 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20439)
+spawned uWSGI worker 1 (pid: 20442, cores: 2)
+spawned uWSGI worker 2 (pid: 20443, cores: 2)
+spawned uWSGI worker 3 (pid: 20444, cores: 2)
+spawned uWSGI worker 4 (pid: 20445, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:17:27 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.0.11:8081 fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/.virtualenvs/smartBox
+Set PythonHome to /home/ubuntu/.virtualenvs/smartBox
+Python main interpreter initialized at 0x56271a455bf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56271a455bf0 pid: 22105 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22105)
+spawned uWSGI worker 1 (pid: 22107, cores: 2)
+spawned uWSGI worker 2 (pid: 22108, cores: 2)
+spawned uWSGI worker 3 (pid: 22109, cores: 2)
+spawned uWSGI worker 4 (pid: 22110, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 22107)...
+Gracefully killing worker 2 (pid: 22108)...
+Gracefully killing worker 3 (pid: 22109)...
+Gracefully killing worker 4 (pid: 22110)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/smart_box/smartBox
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (172.16.0.11:8081)
+running /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:21:10 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 172.16.0.11:8081 fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/.virtualenvs/smartBox
+Set PythonHome to /home/ubuntu/.virtualenvs/smartBox
+Python main interpreter initialized at 0x55d533699630
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d533699630 pid: 22105 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 22105)
+spawned uWSGI worker 1 (pid: 22667, cores: 2)
+spawned uWSGI worker 2 (pid: 22668, cores: 2)
+spawned uWSGI worker 3 (pid: 22669, cores: 2)
+spawned uWSGI worker 4 (pid: 22670, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Nov 22 15:35:28 2021] ***
+compiled with version: 7.5.0 on 22 November 2021 06:49:15
+os: Linux-4.15.0-118-generic #119-Ubuntu SMP Tue Sep 8 12:30:01 UTC 2020
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/smart_box/smartBox
+writing pidfile to uwsgi.pid
+detected binary path: /home/ubuntu/.virtualenvs/smartBox/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/smart_box/smartBox
+your processes number limit is 7075
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.0.11:9090 fd 3
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+PEP 405 virtualenv detected: /home/ubuntu/.virtualenvs/smartBox
+Set PythonHome to /home/ubuntu/.virtualenvs/smartBox
+Python main interpreter initialized at 0x55dc0fa7ebf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55dc0fa7ebf0 pid: 24962 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24962)
+spawned uWSGI worker 1 (pid: 24964, cores: 2)
+spawned uWSGI worker 2 (pid: 24965, cores: 2)
+spawned uWSGI worker 3 (pid: 24966, cores: 2)
+spawned uWSGI worker 4 (pid: 24967, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 24964|app: 0|req: 1/1] 120.36.51.104 () {40 vars in 750 bytes} [Mon Nov 22 15:41:30 2021] GET /admin => generated 0 bytes in 118 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 2/2] 120.36.51.104 () {40 vars in 752 bytes} [Mon Nov 22 15:41:30 2021] GET /admin/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 3/3] 120.36.51.104 () {40 vars in 789 bytes} [Mon Nov 22 15:41:30 2021] GET /admin/login/?next=/admin/ => generated 1821 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 4/4] 120.36.51.104 () {42 vars in 790 bytes} [Mon Nov 22 15:41:30 2021] GET /static/admin/css/base.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 5/5] 120.36.51.104 () {42 vars in 802 bytes} [Mon Nov 22 15:41:30 2021] GET /static/admin/css/responsive.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24967|app: 0|req: 1/6] 120.36.51.104 () {42 vars in 792 bytes} [Mon Nov 22 15:41:30 2021] GET /static/admin/css/login.css => generated 77 bytes in 94 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 6/7] 120.36.51.104 () {42 vars in 857 bytes} [Mon Nov 22 15:41:48 2021] GET /airConditioner => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 1/8] 120.36.51.104 () {42 vars in 883 bytes} [Mon Nov 22 15:42:12 2021] GET /airConditioner/api-box-data => generated 0 bytes in 71 msecs (HTTP/1.1 301) 3 headers in 134 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 7/9] 120.36.51.104 () {42 vars in 885 bytes} [Mon Nov 22 15:42:12 2021] GET /airConditioner/api-box-data/ => generated 8979 bytes in 47 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 8/10] 120.36.51.104 () {42 vars in 835 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/css/bootstrap-tweaks.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 2/11] 120.36.51.104 () {42 vars in 792 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/csrf.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 9/12] 120.36.51.104 () {42 vars in 816 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/jquery-3.4.1.min.js => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24966|app: 0|req: 3/13] 120.36.51.104 () {42 vars in 802 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/ajax-form.js => generated 77 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 3/14] 120.36.51.104 () {42 vars in 817 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/css/default.css => generated 77 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 10/15] 120.36.51.104 () {42 vars in 810 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/bootstrap.min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 4/16] 120.36.51.104 () {42 vars in 808 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/prettify-min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 11/18] 120.36.51.104 () {42 vars in 798 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/default.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 2/18] 120.36.51.104 () {42 vars in 819 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/css/prettify.css => generated 77 bytes in 106 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 2/19] 120.36.51.104 () {42 vars in 829 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/css/bootstrap.min.css => generated 77 bytes in 107 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24966|app: 0|req: 5/20] 120.36.51.104 () {42 vars in 816 bytes} [Mon Nov 22 15:42:12 2021] GET /static/rest_framework/js/jquery-3.4.1.min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 3/21] 120.36.51.104 () {42 vars in 802 bytes} [Mon Nov 22 15:42:13 2021] GET /static/rest_framework/js/ajax-form.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 6/22] 120.36.51.104 () {42 vars in 792 bytes} [Mon Nov 22 15:42:13 2021] GET /static/rest_framework/js/csrf.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 12/23] 120.36.51.104 () {42 vars in 810 bytes} [Mon Nov 22 15:42:13 2021] GET /static/rest_framework/js/bootstrap.min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 3/24] 120.36.51.104 () {42 vars in 808 bytes} [Mon Nov 22 15:42:13 2021] GET /static/rest_framework/js/prettify-min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24967|app: 0|req: 4/25] 120.36.51.104 () {42 vars in 798 bytes} [Mon Nov 22 15:42:13 2021] GET /static/rest_framework/js/default.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24967|app: 0|req: 5/26] 42.236.10.93 () {38 vars in 844 bytes} [Mon Nov 22 15:42:15 2021] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 24966|app: 0|req: 7/27] 42.236.10.93 () {38 vars in 846 bytes} [Mon Nov 22 15:42:15 2021] GET /admin/ => generated 0 bytes in 31 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 13/28] 42.236.10.93 () {44 vars in 930 bytes} [Mon Nov 22 15:42:15 2021] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 4/29] 42.236.10.93 () {44 vars in 932 bytes} [Mon Nov 22 15:42:15 2021] GET /admin/ => generated 0 bytes in 30 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 14/30] 42.236.10.93 () {44 vars in 969 bytes} [Mon Nov 22 15:42:15 2021] GET /admin/login/?next=/admin/ => generated 1821 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 15/31] 42.236.10.93 () {44 vars in 987 bytes} [Mon Nov 22 15:42:15 2021] GET /static/admin/css/base.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 6/32] 42.236.10.75 () {44 vars in 999 bytes} [Mon Nov 22 15:42:15 2021] GET /static/admin/css/responsive.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24965|app: 0|req: 5/33] 42.236.10.93 () {44 vars in 989 bytes} [Mon Nov 22 15:42:15 2021] GET /static/admin/css/login.css => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24966|app: 0|req: 8/34] 42.236.10.125 () {38 vars in 863 bytes} [Mon Nov 22 15:43:29 2021] GET /airConditioner => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 7/35] 42.236.10.125 () {44 vars in 949 bytes} [Mon Nov 22 15:43:29 2021] GET /airConditioner => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 6/36] 42.236.10.114 () {38 vars in 863 bytes} [Mon Nov 22 15:43:37 2021] GET /airConditioner => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 9/37] 42.236.10.114 () {44 vars in 949 bytes} [Mon Nov 22 15:43:37 2021] GET /airConditioner => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 16/38] 27.115.124.38 () {44 vars in 975 bytes} [Mon Nov 22 15:45:20 2021] GET /airConditioner/api-box-data => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 134 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 8/39] 27.115.124.38 () {44 vars in 977 bytes} [Mon Nov 22 15:45:20 2021] GET /airConditioner/api-box-data/ => generated 8979 bytes in 62 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 17/40] 27.115.124.38 () {44 vars in 1027 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/css/bootstrap.min.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24965|app: 0|req: 7/41] 27.115.124.45 () {44 vars in 1033 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/css/bootstrap-tweaks.css => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 10/42] 27.115.124.38 () {44 vars in 1017 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/css/prettify.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 11/43] 27.115.124.45 () {44 vars in 1008 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/bootstrap.min.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24966|app: 0|req: 12/44] 27.115.124.38 () {44 vars in 1014 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/jquery-3.4.1.min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24967|app: 0|req: 9/45] 27.115.124.38 () {44 vars in 1015 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/css/default.css => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24965|app: 0|req: 8/46] 27.115.124.38 () {44 vars in 1000 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/ajax-form.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24965|app: 0|req: 9/47] 27.115.124.45 () {44 vars in 990 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/csrf.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24965|app: 0|req: 10/48] 27.115.124.38 () {44 vars in 1006 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/prettify-min.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 18/49] 27.115.124.38 () {44 vars in 996 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/default.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 19/50] 27.115.124.38 () {44 vars in 1014 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/jquery-3.4.1.min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 20/51] 27.115.124.38 () {44 vars in 1000 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/ajax-form.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24967|app: 0|req: 10/52] 27.115.124.38 () {44 vars in 990 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/csrf.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24965|app: 0|req: 11/53] 27.115.124.38 () {44 vars in 1008 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/bootstrap.min.js => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24966|app: 0|req: 13/54] 27.115.124.38 () {44 vars in 1006 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/prettify-min.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 24964|app: 0|req: 21/55] 27.115.124.38 () {44 vars in 996 bytes} [Mon Nov 22 15:45:20 2021] GET /static/rest_framework/js/default.js => generated 77 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 24964|app: 0|req: 22/56] 45.146.164.110 () {34 vars in 499 bytes} [Mon Nov 22 15:50:02 2021] GET / => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
