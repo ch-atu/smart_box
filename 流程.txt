@@ -1,0 +1,11 @@
+一、battery  电池
+    batteryMessage
+    batteryState
+    cloudAlarm
+    
+二、fireAlarm  火灾设备
+    fireAlarmMessage
+    fireAlarmData
+三、airConditioner  空调
+四、humiture  温湿度
+五、inductor  感应器

@@ -1,0 +1,8 @@
+django==2.2.10
+mysqlclient
+pymysql
+redis
+djangorestframework==3.10.3
+django-filter
+
+
