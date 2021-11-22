@@ -27,9 +27,9 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = '9e@*fknj8o92rpk-p^!z_+rpclgrl+l1s-o76hm%q2-97ekh%!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 注册app
-    'airConditioner.apps.AirconditionerConfig',
+    'airConditioner.apps.AirConditionerConfig',
     'battery.apps.BatteryConfig',
-    'fireAlarm.apps.FirealarmConfig',
+    'fireAlarm.apps.FireAlarmConfig',
     'humiture.apps.HumitureConfig',
     'inductor.apps.InductorConfig',
 
@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'smartBox.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '119.29.139.149',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         'NAME': 'smartBox',
         'USER': 'root',
@@ -138,7 +138,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 

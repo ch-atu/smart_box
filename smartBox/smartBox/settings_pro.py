@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 注册app
-    'airConditioner.apps.AirconditionerConfig',
+    'airConditioner.apps.AirConditionerConfig',
     'battery.apps.BatteryConfig',
-    'fireAlarm.apps.FirealarmConfig',
+    'fireAlarm.apps.FireAlarmConfig',
     'humiture.apps.HumitureConfig',
     'inductor.apps.InductorConfig',
 
@@ -138,6 +138,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 
