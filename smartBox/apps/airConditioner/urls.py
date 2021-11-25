@@ -8,6 +8,5 @@ urlpatterns = [
     # 获取空调数据API
     url(r'^api-box-data/$', Api_Box_AirConditioner.as_view()),
 
-
     url(r'^air-cond/$', Api_AirConditioner.as_view()),
 ]
