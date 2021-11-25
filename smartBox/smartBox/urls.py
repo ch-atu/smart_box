@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from box_test import box_test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +23,4 @@ urlpatterns = [
     path('fireAlarm/', include('fireAlarm.urls', namespace='fireAlarm')),
     path('humiture/', include('humiture.urls', namespace='humiture')),
     path('inductor/', include('inductor.urls', namespace='inductor')),
-    path('box_test', box_test)
 ]

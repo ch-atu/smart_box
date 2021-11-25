@@ -16,12 +16,17 @@ class Api_AirConditioner(ListCreateAPIView):
     queryset = AirConditionerData.objects.all()
 
 
-class Api_Box_AirConditioner(ListAPIView):
-    serializer_class = Box_AirConditionerSerializers
-    queryset = Box_AirConditioner.objects.all()
+# # 暂时不用
+# class Api_Box_AirConditioner(ListAPIView):
+#     serializer_class = Box_AirConditionerSerializers
+#     queryset = Box_AirConditioner.objects.all()
 
 
+@api_view(["POST"])
+def box_msg(request):
+    data = request._request.body.decode()
 
+    return HttpResponse(data)
 
 
 
