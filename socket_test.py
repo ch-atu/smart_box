@@ -3,9 +3,8 @@ import socket,sys,io
 
 def main():
     # 1. 买个手机(创建套接字 socket)
-    # tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
+    tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     # 2. 插入手机卡(绑定本地信息 bind)
     tcp_server_socket.bind(("127.0.0.1", 7890))
 
@@ -24,16 +23,18 @@ def main():
     print(recv_data, type(recv_data))
 
     # 回送一部分数据给客户端
-    new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
+    # new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
+    new_client_socket.sendall("hahahahai-----ok-----".encode("utf-8"))
 
     # 关闭套接字
-    new_client_socket.close()
-    tcp_server_socket.close()
+    # new_client_socket.close()
+    # tcp_server_socket.close()
 
 
 if __name__ == "__main__":
     while True:
         main()
+
     # a = bytes.hex('313233')
     # print(a)
     # print(hex(123))

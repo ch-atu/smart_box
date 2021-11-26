@@ -37,7 +37,7 @@ class WSGIServer(object):
 
 
 # 设定服务器的端口
-SERVER_ADDR = (HOST, PORT) = "", 8888
+SERVER_ADDR = (HOST, PORT) = "", 7890
 
 
 def main():
