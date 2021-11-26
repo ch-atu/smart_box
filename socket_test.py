@@ -24,10 +24,10 @@ def main():
 
     # 回送一部分数据给客户端
     # new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
-    new_client_socket.sendall("hahahahai-----ok-----".encode("utf-8"))
+    new_client_socket.sendall("-----ok-----".encode("utf-8"))
 
     # 关闭套接字
-    # new_client_socket.close()
+    new_client_socket.close()
     # tcp_server_socket.close()
 
 
