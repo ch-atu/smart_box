@@ -1,0 +1,3 @@
+2021-11-25 13:49:22,230 - views.py[line:29] - INFO: 输出一行日志
+2021-11-25 13:53:41,816 - log.py[line:222] - WARNING: Not Found: /airConditioner/box_msg/
+2021-11-25 13:54:20,428 - log.py[line:222] - WARNING: Method Not Allowed: /airConditioner/box_msg
