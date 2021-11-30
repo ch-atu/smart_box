@@ -39,7 +39,7 @@ class WSGIServer(object):
                 # print(gevent.getcurrent())
                 print('收到的消息是：', request)
             except UnicodeDecodeError as e:
-                print('超出最大字节数：', e)
+                print('解码时出现错误：', e)
                 request = False
 
             # 当浏览器接收完数据后，会自动调用close进行关闭，因此当其关闭时，web也要关闭这个套接字
@@ -47,7 +47,7 @@ class WSGIServer(object):
                 client_socket.close()
                 break
 
-            send_data = 'hello world!!!'
+            send_data = 'ok'
             client_socket.send(send_data.encode('gbk'))
 
 

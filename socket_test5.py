@@ -47,7 +47,7 @@ class WSGIServer(object):
                 client_socket.close()
                 break
 
-            send_data = 'hello world!!!'
+            send_data = 'success!'
             client_socket.send(send_data.encode('gbk'))
 
 
