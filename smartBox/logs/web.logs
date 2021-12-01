@@ -1,0 +1,124 @@
+[2021-12-01 16:14:03,859] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 16:14:16,348] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+[2021-12-01 16:14:16,833] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 16:15:59,285] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /airConditioner/box_msg HTTP/1.1" 200 14
+[2021-12-01 16:16:20,731] [log.py:222] [log:log_response] [WARNING]- Method Not Allowed: /airConditioner/box_msg
+[2021-12-01 16:16:20,733] [basehttp.py:154] [basehttp:log_message] [WARNING]- "GET /airConditioner/box_msg HTTP/1.1" 405 45
+[2021-12-01 16:16:49,701] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py changed, reloading.
+[2021-12-01 16:16:50,191] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 16:16:55,774] [log.py:222] [log:log_response] [ERROR]- Internal Server Error: /airConditioner/box_msg
+Traceback (most recent call last):
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py", line 30, in box_msg
+    1/0
+ZeroDivisionError: division by zero
+[2021-12-01 16:16:55,776] [basehttp.py:154] [basehttp:log_message] [ERROR]- "POST /airConditioner/box_msg HTTP/1.1" 500 17790
+[2021-12-01 16:28:22,803] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+[(MainThread) 2021-12-01 16:28:23,443] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[(Thread-1) 2021-12-01 16:28:26,868] [log.py:222] [log:log_response] [ERROR]- Internal Server Error: /airConditioner/box_msg
+Traceback (most recent call last):
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py", line 30, in box_msg
+    1/0
+ZeroDivisionError: division by zero
+[(Thread-1) 2021-12-01 16:28:26,870] [basehttp.py:154] [basehttp:log_message] [ERROR]- "POST /airConditioner/box_msg HTTP/1.1" 500 17807
+[(MainThread) 2021-12-01 16:28:37,822] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+[2021-12-01 16:28:38,345] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 23:06:27,478] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 23:06:52,210] [basehttp.py:154] [basehttp:log_message] [INFO]- "POST /airConditioner/box_msg HTTP/1.1" 200 14
+[2021-12-01 23:07:29,389] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py changed, reloading.
+[2021-12-01 23:07:30,258] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 23:07:32,818] [log.py:222] [log:log_response] [ERROR]- Internal Server Error: /airConditioner/box_msg
+Traceback (most recent call last):
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py", line 30, in box_msg
+    1/0
+ZeroDivisionError: division by zero
+[2021-12-01 23:07:32,822] [basehttp.py:154] [basehttp:log_message] [ERROR]- "POST /airConditioner/box_msg HTTP/1.1" 500 17801
+[2021-12-01 23:07:56,050] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+[2021-12-01 23:07:57,605] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-12-01 23:08:00,429] [log.py:222] [log:log_response] [ERROR]- Internal Server Error: /airConditioner/box_msg
+Traceback (most recent call last):
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\VIRTUALENV_FILES\smartBox\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\夏玉铭\Desktop\smart_box\smartBox\apps\airConditioner\views.py", line 30, in box_msg
+    1/0
+ZeroDivisionError: division by zero
+[2021-12-01 23:08:00,434] [basehttp.py:154] [basehttp:log_message] [ERROR]- "POST /airConditioner/box_msg HTTP/1.1" 500 17802
+[2021-12-01 23:08:18,512] [autoreload.py:217] [autoreload:trigger_reload] [INFO]- C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+[2021-12-01 23:08:19,583] [autoreload.py:597] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

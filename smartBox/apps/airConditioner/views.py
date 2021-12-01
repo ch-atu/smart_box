@@ -26,11 +26,9 @@ from check_log import checklog
 @api_view(["POST"])
 def box_msg(request):
     data = request._request.body.decode()
-    # checklog.logger.info('输出一行日志')
+    checklog.logger.info('输出一行日志')
+    1/0
     return HttpResponse(data)
-
-
-
 
 
 

@@ -10,12 +10,14 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)  # 设置日志级别
 logfile = settings.CHECK_LOG_DIR + '/check.logs'
 
-fh = logging.FileHandler(logfile,mode='a')
+fh = logging.FileHandler(logfile, mode='a')
 fh.setLevel(logging.INFO)
+
 ch = logging.StreamHandler()
 ch.setLevel(logging.INFO)
 
 formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
+
 fh.setFormatter(formatter)
 ch.setFormatter(formatter)
 

@@ -1,3 +1,7 @@
 2021-11-25 13:49:22,230 - views.py[line:29] - INFO: 输出一行日志
 2021-11-25 13:53:41,816 - log.py[line:222] - WARNING: Not Found: /airConditioner/box_msg/
 2021-11-25 13:54:20,428 - log.py[line:222] - WARNING: Method Not Allowed: /airConditioner/box_msg
+2021-12-01 16:13:38,876 - autoreload.py[line:217] - INFO: C:\Users\夏玉铭\Desktop\smart_box\smartBox\smartBox\settings_dev.py changed, reloading.
+2021-12-01 23:06:52,185 - views.py[line:29] - INFO: 输出一行日志
+2021-12-01 23:07:32,651 - views.py[line:29] - INFO: 输出一行日志
+2021-12-01 23:08:00,115 - views.py[line:29] - INFO: 输出一行日志

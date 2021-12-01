@@ -144,78 +144,65 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 日志存放目录
 CHECK_LOG_DIR = os.path.join(BASE_DIR, 'logs')
 
-#
-# # 配置日志
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': True,
-#     'formatters': {
-#         # 日志格式
-#         'standard': {
-#             'format': '[%(asctime)s] [%(filename)s:%(lineno)d] [%(module)s:%(funcName)s] '
-#                       '[%(levelname)s]- %(message)s'},
-#         'simple': {  # 简单格式
-#             'format': '%(levelname)s %(message)s'
-#         },
-#     },
-#     # 过滤
-#     'filters': {
-#     },
-#     # 定义具体处理日志的方式
-#     'handlers': {
-#         # 默认记录所有日志
-#         'default': {
-#             'level': 'INFO',
-#             'class': 'logging.handlers.RotatingFileHandler',
-#             'filename': '',
-#             'maxBytes': 1024 * 1024 * 5,  # 文件大小
-#             'backupCount': 5,  # 备份数
-#             'formatter': 'standard',  # 输出格式
-#             'encoding': 'utf-8',  # 设置默认编码，否则打印出来汉字乱码
-#         },
-#         # 输出错误日志
-#         'error': {
-#             'level': 'ERROR',
-#             'class': 'logging.handlers.RotatingFileHandler',
-#             'filename': '',
-#             'maxBytes': 1024 * 1024 * 5,  # 文件大小
-#             'backupCount': 5,  # 备份数
-#             'formatter': 'standard',  # 输出格式
-#             'encoding': 'utf-8',  # 设置默认编码
-#         },
-#         # 控制台输出
-#         'console': {
-#             'level': 'DEBUG',
-#             'class': 'logging.StreamHandler',
-#             'formatter': 'standard'
-#         },
-#         # 输出info日志
-#         'info': {
-#             'level': 'INFO',
-#             'class': 'logging.handlers.RotatingFileHandler',
-#             'filename': '',
-#             'maxBytes': 1024 * 1024 * 5,
-#             'backupCount': 5,
-#             'formatter': 'standard',
-#             'encoding': 'utf-8',  # 设置默认编码
-#         },
-#     },
-#     # 配置用哪几种 handlers 来处理日志
-#     'loggers': {
-#         # 类型 为 django 处理所有类型的日志， 默认调用
-#         'django': {
-#             'handlers': ['default', 'console'],
-#             'level': 'INFO',
-#             'propagate': False
-#         },
-#         # log 调用时需要当作参数传入
-#         'log': {
-#             'handlers': ['error', 'info', 'console', 'default'],
-#             'level': 'INFO',
-#             'propagate': True
-#         },
-#     }
-# }
+# 控制台日志存放目录
+CONSOLE_LOG = os.path.join(BASE_DIR, 'logs')
+
+# 配置日志
+LOGGING = {
+    'version': 1,  # 指定版本，目前也就一个版本
+    'disable_existing_loggers': True,  # 表示是否禁用所有的已经存在的日志配置
+    'formatters': {
+        # 日志格式
+        'standard': {
+            'format': '[%(asctime)s] [%(filename)s:%(lineno)d] [%(module)s:%(funcName)s] '
+                      '[%(levelname)s]- %(message)s'},
+        'simple': {  # 简单格式
+            'format': '%(levelname)s %(message)s'
+        },
+    },
+    # 暂不使用过滤
+    'filters': {
+    },
+    # 定义具体处理日志的方式
+    # 用来定义具体处理日志的方式，可以定义多种
+    # "default"就是默认方式，"console"就是打印到控制台方式。file是写入到文件的方式，注意使用的class不同
+    'handlers': {
+        # 默认记录所有日志
+        'default': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': CONSOLE_LOG + '/web.logs',  # 日志的存放路径
+            'maxBytes': 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份数
+            'formatter': 'standard',  # 输出格式
+            'encoding': 'utf-8',  # 设置默认编码，否则打印出来汉字乱码
+        },
+        # 控制台输出
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard'
+        },
+    },
+    # log记录器，配置之后就会对应的输出日志
+    # 配置用哪几种 handlers 来处理日志
+    'loggers': {
+        # 类型 为 django 处理所有类型的日志， 默认调用
+        'django': {
+            'handlers': ['default', 'console'],
+            'level': 'INFO',
+            'propagate': False  # 可以基于每个记录器控制该传播。 如果您不希望特定记录器传播到其父项，则可以关闭此行为。
+        },
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
