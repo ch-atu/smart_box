@@ -1,6 +1,7 @@
 from gevent import monkey
 import gevent
 import socket
+from datetime import datetime
 import sys
 import re
 
@@ -38,9 +39,10 @@ class WSGIServer(object):
                 request = client_socket.recv(1024*1024).decode('gbk')
                 # print(gevent.getcurrent())
                 print('收到的消息是：', request)
+                print('时间是：', datetime.now())
             except UnicodeDecodeError as e:
                 print('解码时出现错误：', e)
-                request = False
+                continue
 
             # 当浏览器接收完数据后，会自动调用close进行关闭，因此当其关闭时，web也要关闭这个套接字
             if not request:

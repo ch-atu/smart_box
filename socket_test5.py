@@ -35,7 +35,6 @@ class WSGIServer(object):
         """为这个浏览器服务器"""
         while True:
             # 接收数据
-            request = ''
             try:
                 request = client_socket.recv(1024*1024).decode('utf-8')
                 # print(gevent.getcurrent())
