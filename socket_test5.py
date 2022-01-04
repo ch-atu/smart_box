@@ -34,13 +34,14 @@ class WSGIServer(object):
         """为这个浏览器服务器"""
         while True:
             # 接收数据
+            request = ''
             try:
                 request = client_socket.recv(1024*1024).decode('utf-8')
                 # print(gevent.getcurrent())
                 print('收到的消息是：', request)
             except UnicodeDecodeError as e:
                 print('编码错误：', e)
-                request = False
+                continue
 
             # 当浏览器接收完数据后，会自动调用close进行关闭，因此当其关闭时，web也要关闭这个套接字
             if not request:
