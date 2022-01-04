@@ -1,6 +1,7 @@
 from gevent import monkey
 import gevent
 import socket
+from datetime import datetime
 import sys
 import re
 
@@ -39,6 +40,7 @@ class WSGIServer(object):
                 request = client_socket.recv(1024*1024).decode('utf-8')
                 # print(gevent.getcurrent())
                 print('收到的消息是：', request)
+                print('时间是：', datetime.now())
             except UnicodeDecodeError as e:
                 print('编码错误：', e)
                 continue
