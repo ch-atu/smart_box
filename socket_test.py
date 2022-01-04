@@ -1,5 +1,6 @@
 import binascii
 import socket,sys,io
+import struct
 
 def main():
     # 1. 买个手机(创建套接字 socket)
@@ -19,9 +20,8 @@ def main():
     print('客户端的信息是：', client_addr)
 
     # 接收客户端发送过来的请求
-    recv_data = new_client_socket.recv(1024)
+    recv_data = new_client_socket.recv(1024).decode('utf-8')
     print('收到的数据是：', recv_data, type(recv_data))
-
     # 回送一部分数据给客户端
     # new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
     new_client_socket.sendall("-----ok-----".encode("gbk"))

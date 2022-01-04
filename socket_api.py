@@ -49,7 +49,8 @@ class WSGIServer(object):
                 client_socket.close()
                 break
 
-            send_data = request
+            send_time = str(datetime.now())+'：'
+            send_data = send_time+request+'\n'
             client_socket.send(send_data.encode('gbk'))
 
 
@@ -62,7 +63,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
