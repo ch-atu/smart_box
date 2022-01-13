@@ -4,6 +4,8 @@ import socket
 from datetime import datetime
 import sys
 import re
+import binascii
+
 
 monkey.patch_all()
 
@@ -36,7 +38,7 @@ class WSGIServer(object):
         while True:
             # 接收数据
             try:
-                request = client_socket.recv(1024*1024).decode('gbk')
+                request = client_socket.recv(1024*1024)
                 # print(gevent.getcurrent())
                 print('收到的消息是：', request)
                 print('时间是：', datetime.now())
@@ -49,9 +51,41 @@ class WSGIServer(object):
                 client_socket.close()
                 break
 
-            send_time = str(datetime.now())+'：'
-            send_data = send_time+request+'\n'
-            client_socket.send(send_data.encode('gbk'))
+            # send_data = request
+            send_data = response_data(request)
+            print('回传的数据是：', send_data)
+            client_socket.send(send_data)
+
+
+def response_data(request):
+    # 1.接收上行数据的bytes转成字符串
+    str_hex = str(binascii.b2a_hex(request))[2:-1]
+
+    # 2.将上行数据的十六进制字符串转为列表
+    list_hex = re.findall(r'.{2}', str_hex)
+
+    # 3.拼接上行数据应答列表
+    response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
+
+    # 4.对上行数据应答列表进行十六进制求和
+    check_sum_str = hex(sum([int(i, 16) for i in response_hex_list]))[-4:]
+    if 'x' in check_sum_str:
+        check_sum_str = check_sum_str.replace('x', '0')
+
+    # 5.提取check_sum的高低字节
+    check_sum = [check_sum_str[0:2], check_sum_str[2:]]
+
+    # 6.将check_sum插入上行响应数据，低字节在前，高字节在后
+    response_hex_list.insert(10, check_sum[1])
+    response_hex_list.insert(11, check_sum[0])
+
+    # 7.将上行响应数据列表转为十六进制字符串
+    response_hex_str = ''.join(response_hex_list)
+
+    # 8.将上行响应数据列表转为十六进制字符串转为bytes
+    response_hex = binascii.a2b_hex(response_hex_str)
+
+    return response_hex
 
 
 def main():
