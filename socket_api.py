@@ -21,13 +21,10 @@ class WSGIServer(object):
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         # 3. 绑定本地信息
         self.server_socket.bind(("127.0.0.1", port))
-        # tcp_server_socket.bind(("192.168.0.14", 7890))
+        # self.server_socket.bind(("192.168.0.14", 7890))
         # 4. 变为监听套接字
         # 128的含义：指定系统允许暂未 accept 的连接数，超过后将拒绝新连接。未指定则自动设为合理的默认值。
         self.server_socket.listen(128)
-
-        # 设备与服务器连接flag
-        self.access = False
 
     def run_forever(self):
         """运行服务器"""
@@ -43,9 +40,9 @@ class WSGIServer(object):
             # 接收数据
             try:
                 request = client_socket.recv(1024*1024)
-                # print(gevent.getcurrent())
-                print('收到的消息是：', request)
-                print('时间是：', datetime.now())
+                # # print(gevent.getcurrent())
+                # print('收到的消息是：', request)
+                # print('时间是：', datetime.now())
             except UnicodeDecodeError as e:
                 print('解码时出现错误：', e)
                 continue
@@ -57,7 +54,7 @@ class WSGIServer(object):
 
             # send_data = request
             send_data = self.response_data(request)
-            print('回传的数据是：', send_data)
+            # print('回传的数据是：', send_data)
             print('')
             client_socket.send(send_data)
 
@@ -67,12 +64,11 @@ class WSGIServer(object):
 
         # 2.将上行数据的十六进制字符串转为列表
         list_hex = re.findall(r'.{2}', str_hex)
-
+        print('收到的数据是：', ' '.join(list_hex))
+        print('时间是：', datetime.now())
         # 3.拼接上行数据应答列表
         if list_hex[7] == '41':
             response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
-            # 设备与服务器连接成功
-            self.access = True
             print('服务器连接成功！')
         else:
             response_hex_list = list_hex[0:7] + ['c0'] + list_hex[8:10] + ['00']
@@ -91,6 +87,7 @@ class WSGIServer(object):
         response_hex_list.insert(11, check_sum[0])
 
         # 7.将上行响应数据列表转为十六进制字符串
+        print('响应的数据是：', ' '.join(response_hex_list))
         response_hex_str = ''.join(response_hex_list)
 
         # 8.将上行响应数据列表转为十六进制字符串转为bytes
