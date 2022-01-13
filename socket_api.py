@@ -84,7 +84,6 @@ def response_data(request):
 
     # 8.将上行响应数据列表转为十六进制字符串转为bytes
     response_hex = binascii.a2b_hex(response_hex_str)
-
     return response_hex
 
 

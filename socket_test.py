@@ -25,7 +25,7 @@ def main():
     print('收到的数据是：', recv_data, type(recv_data))
     # 回送一部分数据给客户端
     # new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
-    data = 'U\xaa\x00xV4\x12A|\x08\xdc\x02\x04\x00\x00\x00\x00'.encode('raw_unicode_escape')
+    data = 'U\xaa\x00xV4\x12@\x01\x00T\x02\x00'.encode('raw_unicode_escape')
     print(data)
     new_client_socket.send(data)
 
