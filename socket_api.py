@@ -54,6 +54,7 @@ class WSGIServer(object):
             # send_data = request
             send_data = response_data(request)
             print('回传的数据是：', send_data)
+            print('')
             client_socket.send(send_data)
 
 
