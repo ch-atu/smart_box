@@ -8,7 +8,6 @@ def main():
     # tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     # 2. 插入手机卡(绑定本地信息 bind)
     tcp_server_socket.bind(("127.0.0.1", 7890))
-    # tcp_server_socket.bind(("192.168.0.14", 7890))
 
     # 3. 将手机设置为正常的 响铃模式(让默认的套接字由主动变为被动 listen)
     tcp_server_socket.listen(128)
@@ -27,7 +26,7 @@ def main():
     # 回送一部分数据给客户端
     # new_client_socket.send("hahahahai-----ok-----".encode("utf-8"))
     # data = 'U\xaa\x00xV4\x12@\x01\x00T\x02\x00'.encode('raw_unicode_escape')
-    data = 'U\xaa\x00xV4\x12@\x0b\x00^\x02\x00'.encode('raw_unicode_escape')
+    data = 'U\xaa\x00xV4\x12@r\x00\xc5\x02\x00'.encode('raw_unicode_escape')
     print(data)
     new_client_socket.send(data)
 

@@ -21,6 +21,7 @@ class WSGIServer(object):
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         # 3. 绑定本地信息
         self.server_socket.bind(("127.0.0.1", port))
+        # tcp_server_socket.bind(("192.168.0.14", 7890))
         # 4. 变为监听套接字
         # 128的含义：指定系统允许暂未 accept 的连接数，超过后将拒绝新连接。未指定则自动设为合理的默认值。
         self.server_socket.listen(128)
@@ -68,7 +69,7 @@ class WSGIServer(object):
         list_hex = re.findall(r'.{2}', str_hex)
 
         # 3.拼接上行数据应答列表
-        if not self.access:
+        if list_hex[7] == '41':
             response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
             # 设备与服务器连接成功
             self.access = True
