@@ -25,6 +25,9 @@ class WSGIServer(object):
         # 128的含义：指定系统允许暂未 accept 的连接数，超过后将拒绝新连接。未指定则自动设为合理的默认值。
         self.server_socket.listen(128)
 
+        # 设备与服务器连接flag
+        self.access = False
+
     def run_forever(self):
         """运行服务器"""
 
@@ -52,40 +55,47 @@ class WSGIServer(object):
                 break
 
             # send_data = request
-            send_data = response_data(request)
+            send_data = self.response_data(request)
             print('回传的数据是：', send_data)
             print('')
             client_socket.send(send_data)
 
+    def response_data(self, request):
+        # 1.接收上行数据的bytes转成字符串
+        str_hex = str(binascii.b2a_hex(request))[2:-1]
 
-def response_data(request):
-    # 1.接收上行数据的bytes转成字符串
-    str_hex = str(binascii.b2a_hex(request))[2:-1]
+        # 2.将上行数据的十六进制字符串转为列表
+        list_hex = re.findall(r'.{2}', str_hex)
 
-    # 2.将上行数据的十六进制字符串转为列表
-    list_hex = re.findall(r'.{2}', str_hex)
+        # 3.拼接上行数据应答列表
+        if not self.access:
+            response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
+            # 设备与服务器连接成功
+            self.access = True
+            print('服务器连接成功！')
+        else:
+            response_hex_list = list_hex[0:7] + ['c0'] + list_hex[8:10] + ['00']
+            print('心跳响应')
 
-    # 3.拼接上行数据应答列表
-    response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
+        # 4.对上行数据应答列表进行十六进制求和
+        check_sum_str = hex(sum([int(i, 16) for i in response_hex_list]))[-4:]
+        if 'x' in check_sum_str:
+            check_sum_str = check_sum_str.replace('x', '0')
 
-    # 4.对上行数据应答列表进行十六进制求和
-    check_sum_str = hex(sum([int(i, 16) for i in response_hex_list]))[-4:]
-    if 'x' in check_sum_str:
-        check_sum_str = check_sum_str.replace('x', '0')
+        # 5.提取check_sum的高低字节
+        check_sum = [check_sum_str[0:2], check_sum_str[2:]]
 
-    # 5.提取check_sum的高低字节
-    check_sum = [check_sum_str[0:2], check_sum_str[2:]]
+        # 6.将check_sum插入上行响应数据，低字节在前，高字节在后
+        response_hex_list.insert(10, check_sum[1])
+        response_hex_list.insert(11, check_sum[0])
 
-    # 6.将check_sum插入上行响应数据，低字节在前，高字节在后
-    response_hex_list.insert(10, check_sum[1])
-    response_hex_list.insert(11, check_sum[0])
+        # 7.将上行响应数据列表转为十六进制字符串
+        response_hex_str = ''.join(response_hex_list)
 
-    # 7.将上行响应数据列表转为十六进制字符串
-    response_hex_str = ''.join(response_hex_list)
+        # 8.将上行响应数据列表转为十六进制字符串转为bytes
+        response_hex = binascii.a2b_hex(response_hex_str)
 
-    # 8.将上行响应数据列表转为十六进制字符串转为bytes
-    response_hex = binascii.a2b_hex(response_hex_str)
-    return response_hex
+        return response_hex
 
 
 def main():
