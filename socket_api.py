@@ -67,12 +67,17 @@ class WSGIServer(object):
         print('收到的数据是：', ' '.join(list_hex))
         print('时间是：', datetime.now())
         # 3.拼接上行数据应答列表
-        if list_hex[7] == '41':
-            response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
-            print('服务器连接成功！')
-        else:
-            response_hex_list = list_hex[0:7] + ['c0'] + list_hex[8:10] + ['00']
-            print('心跳响应')
+        try:
+            if list_hex[7] == '41':
+                response_hex_list = list_hex[0:7] + ['c1'] + list_hex[8:10] + ['01', '00']
+                print('服务器连接成功！')
+            elif list_hex[7] == '40':
+                response_hex_list = list_hex[0:7] + ['c0'] + list_hex[8:10] + ['00']
+                print('心跳响应')
+            else:
+                return request
+        except Exception as e:
+            return request
 
         # 4.对上行数据应答列表进行十六进制求和
         check_sum_str = hex(sum([int(i, 16) for i in response_hex_list]))[-4:]
