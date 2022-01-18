@@ -73,7 +73,10 @@ class WSGIServer(object):
                 print('服务器连接成功！')
             elif list_hex[7] == '40':
                 response_hex_list = list_hex[0:7] + ['c0'] + list_hex[8:10] + ['00']
-                print('心跳响应')
+                print('心跳响应！')
+            elif list_hex[7] == '20':
+                response_hex_list = list_hex[0:7] + ['a0'] + list_hex[8:10] + ['01', '00']
+                print('单字节上行命令！')
             else:
                 return request
         except Exception as e:
